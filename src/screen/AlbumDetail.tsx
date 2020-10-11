@@ -58,12 +58,20 @@ const AlbumDetail = (props: Props) => {
     TrackPlayer.pause();
   }
   function resumeMusic() {
-    setIsPlaying(false);
+    setIsPlaying(true);
     TrackPlayer.play();
   }
   async function changeTrack(item: any) {
     await setTrackInfo(item);
-    TrackPlayer.destroy();
+    //TrackPlayerremove(tracks)
+    await TrackPlayer.add({
+      id: item.trackId,
+      url: item.previewUrl,
+      title: item?.trackName,
+      artist: item?.artistName,
+      //artwork: require('track.png'),
+    });
+
     setTimeout(() => {
       playMusic();
     }, 2000);

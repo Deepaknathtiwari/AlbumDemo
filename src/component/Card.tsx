@@ -6,7 +6,7 @@ import { parser } from '../service/parser';
 
 interface Props {
   rowData: { item: any; index: number };
-  handleNavigation: (album: any) => void;
+  handleNavigation: (item: any) => void;
 }
 
 const AlbumCard = React.memo(function Card(props: Props) {
@@ -19,12 +19,13 @@ const AlbumCard = React.memo(function Card(props: Props) {
           uri: parser(props.rowData.item.artworkUrl100, 'source/300x300'),
         }}
         style={styles.imageStyle}
+        data-test="Album-card-component"
       />
       <Text
         style={styles.title}
         numberOfLines={
           1
-        }>{`${props.rowData.item.trackName.toUpperCase()}`}</Text>
+        }>{`${props.rowData.item?.trackName?.toUpperCase()}`}</Text>
     </TouchableOpacity>
   );
 });

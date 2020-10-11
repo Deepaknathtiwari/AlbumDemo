@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Album Card Component Album card snapshot: Album card snapshot 1`] = `
+<ForwardRef
+  onPress={[Function]}
+  style={
+    Object {
+      "borderRadius": 5,
+      "marginHorizontal": 5,
+      "marginVertical": 15,
+      "width": 365,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": undefined,
+      }
+    }
+    style={
+      Object {
+        "borderRadius": 5,
+        "height": 350,
+        "width": 350,
+      }
+    }
+  />
+  <Text
+    numberOfLines={1}
+    style={
+      Object {
+        "fontSize": 32,
+        "fontWeight": "bold",
+        "marginTop": 5,
+      }
+    }
+  >
+    undefined
+  </Text>
+</ForwardRef>
+`;
+
+exports[`Album Card Component Album snapshot: GP Card snap 1`] = `
+<ForwardRef
+  onPress={[Function]}
+  style={
+    Object {
+      "borderRadius": 5,
+      "marginHorizontal": 5,
+      "marginVertical": 15,
+      "width": 365,
+    }
+  }
+>
+  <Image
+    data-test="Album-card-component"
+    source={
+      Object {
+        "uri": undefined,
+      }
+    }
+    style={
+      Object {
+        "borderRadius": 5,
+        "height": 350,
+        "width": 350,
+      }
+    }
+  />
+  <Text
+    numberOfLines={1}
+    style={
+      Object {
+        "fontSize": 32,
+        "fontWeight": "bold",
+        "marginTop": 5,
+      }
+    }
+  >
+    undefined
+  </Text>
+</ForwardRef>
+`;

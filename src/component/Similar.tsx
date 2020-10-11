@@ -24,7 +24,7 @@ const SimilarCard = React.memo(function Card(props: Props) {
         numberOfLines={1}
         style={
           styles.title
-        }>{`${props.rowData.item.trackName.toUpperCase()}`}</Text>
+        }>{`${props.rowData.item?.trackName?.toUpperCase()}`}</Text>
     </TouchableOpacity>
   );
 });

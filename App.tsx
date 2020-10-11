@@ -9,7 +9,7 @@
  */
 
 import React from 'react';
-import { StatusBar } from 'react-native';
+import { StatusBar, SafeAreaView } from 'react-native';
 //import AlbumList from './src/screen/AlbumList';
 import Navigator from './src/navigator';
 import Store from './src/redux/store';
@@ -20,7 +20,9 @@ const App = () => {
   return (
     <Provider store={Store}>
       <StatusBar barStyle="dark-content" />
-      <Navigator />
+      <SafeAreaView style={{ flex: 1 }}>
+        <Navigator />
+      </SafeAreaView>
     </Provider>
   );
 };
