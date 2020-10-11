@@ -13,6 +13,7 @@ $ react-native yarn start after that  yarn ios or yarn android
 ```
 $ react-native-track-player is used for play audio
 $ [Manual Configuration](https://react-native-track-player.js.org/install/)
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
 ```
 
 ### Run Test 
